@@ -11,9 +11,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     background-color: #a7bcff;
     color: #f5f5f5;
-    display: grid;
-    place-items: center;
-    height: 100vh;
   }
 
   img {
