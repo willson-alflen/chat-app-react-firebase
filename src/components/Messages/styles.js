@@ -9,4 +9,5 @@ export const MessagesContainer = styled.div`
   height: 100%;
   overflow-y: auto;
   scrollbar-width: thin;
+  scrollbar-color: #5d5b8d #ddddf7;
 `

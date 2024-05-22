@@ -6,6 +6,8 @@ export const Chats = styled.div`
   padding: 1rem 0.5rem;
   height: calc(100% - 164px);
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #5d5b8d transparent;
 `
 
 export const UserChat = styled.div`
