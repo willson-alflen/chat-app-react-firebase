@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const FormWrapper = styled.div`
   background-color: #fff;
@@ -52,6 +52,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
   transition: background-color 0.2s;
 
   &:hover {
@@ -65,5 +66,37 @@ export const Signup = styled.p`
 
   a {
     color: #7b96ec;
+  }
+`
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+export const AlreadyLoggedInMessage = styled.div`
+  width: fit-content;
+  margin: 4rem auto;
+  background-color: #7b96ec;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0 25px 25px 25px;
+  animation: ${fadeIn} 1s ease-in-out;
+
+  span {
+    display: block;
+
+    a {
+      text-decoration: underline;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #3e3c61;
+      }
+    }
   }
 `
