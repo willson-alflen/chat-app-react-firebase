@@ -10,13 +10,16 @@ export const TypingContainer = styled.div`
   border-top: 1px solid #ddddf7;
 `
 
-export const TypingInput = styled.input`
+export const TypingArea = styled.textarea`
   background-color: transparent;
   border: none;
   outline: none;
   width: calc(80% - 0.25rem);
   color: #2f2d52;
   font-size: 1rem;
+  resize: none;
+  scrollbar-width: thin;
+  scrollbar-color: #ddddf7 transparent;
 
   &::placeholder {
     color: lightgray;

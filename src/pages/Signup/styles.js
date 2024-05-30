@@ -58,6 +58,13 @@ export const Input = styled.input`
   }
 `
 
+export const FileName = styled.span`
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  color: #72b888;
+`
+
 export const Button = styled.button`
   width: 80%;
   margin: 3rem auto 0;

@@ -11,3 +11,8 @@ export const MessagesContainer = styled.div`
   scrollbar-width: thin;
   scrollbar-color: #5d5b8d #ddddf7;
 `
+
+export const NoMessages = styled.p`
+  color: #5d5b8d;
+  text-align: center;
+`

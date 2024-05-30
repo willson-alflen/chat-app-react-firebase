@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Chats = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.75rem;
   padding: 1rem 0.5rem;
   height: calc(100% - 164px);
@@ -24,6 +25,9 @@ export const UserChat = styled.div`
 
   .user-icon {
     font-size: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
   }
 
   div {

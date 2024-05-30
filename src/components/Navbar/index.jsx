@@ -7,7 +7,7 @@ import * as S from './styles'
 import { FaCircleUser } from 'react-icons/fa6'
 
 export default function Navbar() {
-  const { dispatch } = useContext(UserContext)
+  const { user, dispatch } = useContext(UserContext)
   const navigate = useNavigate()
 
   const handleUserLogout = () => {
@@ -28,8 +28,16 @@ export default function Navbar() {
     <S.Navbar>
       <h1>Chat App</h1>
       <S.User>
-        <FaCircleUser className="user-icon" />
-        <span>John Doe</span>
+        {user.photoURL ? (
+          <img
+            src={user.photoURL}
+            alt={user.displayName}
+            style={{ width: '2rem', height: '2rem', borderRadius: '50%' }}
+          />
+        ) : (
+          <FaCircleUser className="user-icon" />
+        )}
+        <span>{user.displayName}</span>
         <button onClick={handleUserLogout}>logout</button>
       </S.User>
     </S.Navbar>
